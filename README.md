@@ -1,2 +1,2 @@
 # blog
-about learning experience golang and mysql
+about learning experience
