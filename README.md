@@ -1,2 +1,4 @@
 # blog
-about learning experience
+關於學習程式經驗與筆記
+
+## 是什麼系列
