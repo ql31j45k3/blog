@@ -28,19 +28,34 @@
     WebSocket 交握使用 HTTP 完成，因 HTTP 是網際網路最普及的基礎設施，但 WebSocket 不限於用 HTTP 交握符合協議，任何端口都可進行交握。
     WebSocket 是應用層協議，Socket 是一組介面介於應用層與傳輸層之間，隱藏底層的細節為兩個節點的溝通機制概念。
 
-## 備註
-    Socket （英語：Network socket；又譯網路插座、網路介面、網路插槽）
-    交握/握手：為了進行連結 瀏覽器一方請求連線，伺服器一方回應請求過程
+---
+- 備註
+    <br/>
+    Socket （英語：Network socket；又譯網路插座、網路介面、網路插槽）。
+    <br/>
+    交握/握手：為了進行連結 瀏覽器一方請求連線，伺服器一方回應請求過程。
+    <br/>
     應用層：應用程式的溝通協定，也可以理解為不同應用程式如何協同工作。
-    傳輸層：定義點到點如何傳輸
+    <br/>
+    傳輸層：定義點到點如何傳輸。
     
-## 參考
-    維基百科 WebSocker <https://zh.wikipedia.org/wiki/WebSocket>
-    維基百科 OSI 模型 [https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B]
-    維基百科 HTTP 協定[https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE]
-    維基百科 Socket [https://zh.wikipedia.org/wiki/%E7%B6%B2%E8%B7%AF%E6%8F%92%E5%BA%A7]
-    教學｜用傳紙條輕鬆入門 WebSocket [https://medium.com/dezchuang/rookie-to-learn-websocket-cfc7b172daa3]
-    程式前沿-WebSocket介紹，與Socket的區別 [https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/603007/]
-    阮一峰的网络日志-WebSocket 教程 [http://www.ruanyifeng.com/blog/2017/05/websocket.html]
-    全双工通信的WebSocket - 冰霜之地[https://halfrost.com/websocket/]
-    Socket 的哩哩扣扣– 拿鐵派的馬克Blog [https://mark-lin.com/posts/20170910/]
+- 參考
+    <br/>
+    [維基百科 WebSocker](https://zh.wikipedia.org/wiki/WebSocket/)
+    <br/>
+    [維基百科 OSI 模型](https://zh.wikipedia.org/wiki/OSI%E6%A8%A1%E5%9E%8B)
+    <br/>
+    [維基百科 HTTP 協定](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE)
+    <br/>
+    [維基百科 Socket](https://zh.wikipedia.org/wiki/%E7%B6%B2%E8%B7%AF%E6%8F%92%E5%BA%A7)
+    <br/>
+    [教學｜用傳紙條輕鬆入門 WebSocket](https://medium.com/dezchuang/rookie-to-learn-websocket-cfc7b172daa3)
+    <br/>
+    [程式前沿-WebSocket介紹，與Socket的區別](https://codertw.com/%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80/603007/)
+    <br/>
+    [阮一峰的网络日志-WebSocket 教程](http://www.ruanyifeng.com/blog/2017/05/websocket.html)
+    <br/>
+    [全双工通信的WebSocket - 冰霜之地](https://halfrost.com/websocket/)
+    <br/>
+    [Socket 的哩哩扣扣– 拿鐵派的馬克Blog](https://mark-lin.com/posts/20170910/)
+    <br/>
