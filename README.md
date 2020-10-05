@@ -34,4 +34,6 @@
     [什麼事 XSS](./What%20is%20it/什麼事%20XSS.md)
     <br/>
     [什麼事 SQL Injection](./What%20is%20it/什麼事%20SQL%20Injection.md)
+    <br/>
+    [什麼事 CORS](./What%20is%20it/什麼事%20CORS.md)
     
