@@ -13,6 +13,17 @@ CREATE TABLE `test_student` (
     INDEX idx_department＿id (`department＿id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '測試用學生 Table';
 
+INSERT INTO `test_student` (`no`, `name`, `age`, `score`, `department＿id`)
+VALUE ('s0003', '小明', 19, 100, 1),
+    ('s0004', '小黃', 19, 100, 1),
+    ('s0005', 'abboy', 19, 100, 2),
+    ('s0006', '好正', 19, 100, 3),
+    ('s0007', '正妹就是正', 19, 100, 4),
+    ('s0008', '小明的好朋友', 19, 100, 5),
+    ('s0009', '小明的壞朋友', 19, 100, 6),
+    ('s0010', '小明的敵人', 19, 100, 1)
+;
+
 -- 測試用部門 Table
 DROP TABLE IF EXISTS `test_department`;
 CREATE TABLE `test_department` (
@@ -20,6 +31,10 @@ CREATE TABLE `test_department` (
     `name` varchar(50) NOT NULL DEFAULT '' COMMENT '',
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT '測試用部門 Table';
+
+INSERT INTO `test_department` (`name`)
+VALUE ('資工'), ('商管'), ('資管'), ('國文'), ('數學'), ('設計')
+;
 
 -- 分隔線
 
