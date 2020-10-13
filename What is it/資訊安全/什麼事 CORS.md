@@ -27,7 +27,7 @@
 ---
 - 備註
     <br/>
-    同源政策，Same-origin policy。
+    同源政策，Same-origin policy，Scheme(HTTP、HTTPS) + Domain + Port 視為同源，Cookie Domain + Path 視為同源。
     <br/>
     CORS，全名為 Cross-Origin Resource Sharing，跨來源資源共享。
 
