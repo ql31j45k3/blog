@@ -94,5 +94,5 @@
     
     message orderResponse {
         Bool isSuccess = 1;
-    |
+    }
 ```
