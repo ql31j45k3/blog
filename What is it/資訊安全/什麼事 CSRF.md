@@ -34,7 +34,7 @@
 ---
 - 備註
     <br/>
-    CSRF 全名是 Cross-site request forgery。
+    跨站請求偽造（英語：Cross-site request forgery），也被稱為 one-click attack 或者session riding，通常縮寫為 CSRF 或者XSRF。
 
 - 參考
     <br/>
