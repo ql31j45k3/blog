@@ -48,7 +48,7 @@
 ---
 - 備註
     <br/>
-    REST，全名 Representational State Transfer( 表現層狀態轉移)。
+    REST，全名 Representational State Transfer (表現層狀態轉移)。
     <br/>
     統一資源識別碼（英語：Uniform Resource Identifier，縮寫：URI）在電腦術語中是一個用於標識某一網際網路資源名稱的字串。
     <br/>
