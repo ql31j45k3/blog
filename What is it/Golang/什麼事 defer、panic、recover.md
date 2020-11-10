@@ -31,7 +31,7 @@
 
 ### 總結
     panic 發生時會獲取當前的 goroutine 並把所有 defer 執行，如果執行當中在 defer 內有 recover，
-    就將當前的 panic 改為已處理過，回覆正常流程依序執行完 defer 後服務繼續執行，如果沒有 recover 就終止服務，
+    就將當前的 panic 改為已處理過，回復正常流程依序執行完 defer 後服務繼續執行，如果沒有 recover 就終止服務，
     會將最後 panic 訊息與依序呼叫的函數關係打印出來。
     
     panic、recover 是一個成對的關鍵字，發生 panic 有 recover 可以阻止它，實際流程上 panic 發生時唯一會執行的只剩下
