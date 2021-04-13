@@ -39,6 +39,8 @@
     [什麼事 JSON Hijacking](./What%20is%20it/資訊安全/什麼事%20JSON%20Hijacking.md)
     <br/>
     [什麼事 CSS keylogger](./What%20is%20it/資訊安全/什麼事%20CSS%20keylogger.md)
+    <br/>
+    [什麼事 IDOR](./What%20is%20it/資訊安全/什麼事%20IDOR.md)
  
  - WEB 開發
     <br/>
