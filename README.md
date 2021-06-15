@@ -65,4 +65,5 @@
     [什麼事 defer、panic、recover](./What%20is%20it/Golang/什麼事%20defer、panic、recover.md)
     <br/>
     [什麼事 interface、reflection](./What%20is%20it/Golang/什麼事%20interface、reflection.md)
-    
+    <br/>
+    [什麼事 method receiver](./What%20is%20it/Golang/什麼事%20method%20receiver.md)
