@@ -69,3 +69,7 @@
     [什麼事 method receiver](./What%20is%20it/Golang/什麼事%20method%20receiver.md)
     <br/>
     [什麼事 lock](./What%20is%20it/Golang/什麼事%20lock.md)
+
+- MySQL
+    <br/>
+    [什麼事 Master-Slave 同步機制](./What%20is%20it/MySQL/什麼事%20Master-Slave%20同步機制.md)
