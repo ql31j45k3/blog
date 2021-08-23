@@ -73,3 +73,8 @@
 - MySQL
     <br/>
     [什麼事 Master-Slave 同步機制](./What%20is%20it/MySQL/什麼事%20Master-Slave%20同步機制.md)
+
+## 安裝
+    紀錄安裝步驟，因某些狀況不易安裝，如 mongoDB brew 不在支援關係。
+---
+[mac 安裝 mongoDB](./安裝/db/mac%20安裝%20mongoDB.md)
