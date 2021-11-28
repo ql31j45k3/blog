@@ -70,13 +70,15 @@
     <br/>
     [什麼事 lock](./What%20is%20it/Golang/什麼事%20lock.md)
 
-- MySQL
+ - MySQL
     <br/>
     [什麼事 Master-Slave 同步機制](./What%20is%20it/MySQL/什麼事%20Master-Slave%20同步機制.md)
     <br/>
     [什麼事 Binlog、GTID](./What%20is%20it/MySQL/什麼事%20Binlog、GTID.md)
     <br/>
     [什麼事鎖](./What%20is%20it/MySQL/什麼事鎖.md)
+    <br/>
+    [什麼事備份和恢復流程](./What%20is%20it/MySQL/什麼事備份和恢復流程.md)
 
 ## 安裝
     紀錄安裝步驟，因某些狀況不易安裝，如 mongoDB brew 不在支援關係。
