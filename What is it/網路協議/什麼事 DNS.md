@@ -47,7 +47,7 @@
     送代解析是提供客戶端更接近知道實際儲存 IP 位置的 DNS 位置，客戶端會在對下一個 DNS 發送請求得到下一個 DNS 位置。
     
     用遞迴解析是 Local DNS 代替使用者重新發送域名查找的請求，對使用者隱蔽 DNS 分布式的架構，
-    用送代解析是Root DNS、TLD DNS 作為提供下一個 DNS 位置，負責管理 DNS 層級關係，
+    用送代解析是 Root DNS、TLD DNS 作為提供下一個 DNS 位置，負責管理 DNS 層級關係，
     直到查找到 Authoritative DNS 才有實際儲存 IP 位置內容。
 
 ## 為什麼區域傳輸用 TCP 協議、域名解析用 UDP 協議
