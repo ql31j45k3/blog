@@ -78,7 +78,7 @@
     [Jiajun的编程随想-为什么gRPC难以推广](https://jiajunhuang.com/articles/2019_09_29-why_grpc_is_not_popular.md.html)
 
 - 範例
-<br/>
+
 ```
     syntax = "proto3"
     package order
