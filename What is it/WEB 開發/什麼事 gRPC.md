@@ -80,7 +80,7 @@
 - 範例
 <br/>
 ```
-    syntax = “proto3”
+    syntax = "proto3"
     package order
     
     service orderDetail {
