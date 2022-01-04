@@ -42,19 +42,19 @@
     - To modify a reflection object, the value must be settable.
 
     1. 反射從接口值可以得到反射對象
-        func TypeOf(i interface{}) Type
-        func ValueOf(i interface{}) Value
-    依照 reflect 包提供的 TypeOf、ValueOf func，可以從 interface{} 帶入任意的變數型態，
-    並取得反射的對象 reflect.Type or reflect.Value。
+       func TypeOf(i interface{}) Type
+       func ValueOf(i interface{}) Value
+       依照 reflect 包提供的 TypeOf、ValueOf func，可以從 interface{} 帶入任意的變數型態，
+       並取得反射的對象 reflect.Type or reflect.Value。
 
     2. 反射從反射對象得到值
-    reflect.Value 包含了類型訊息、值訊息 。
-        用 func (v Value) Type() Type 取得類型
-        用 func (v Value) Interface() (i interface{}) 可以取得值
+       reflect.Value 包含了類型訊息、值訊息 。
+       用 func (v Value) Type() Type 取得類型
+       用 func (v Value) Interface() (i interface{}) 可以取得值
 
     3. 要修改反射對象，該值必須可設置
-        用 func (v Value) CanSet() bool
-    可以確認值是否可以修改，Go 允許修改大寫對外的參數。
+       用 func (v Value) CanSet() bool
+       可以確認值是否可以修改，Go 允許修改大寫對外的參數。
 
 ## 總結
     反射是讓編譯語言可以推遲到執行期間確認傳入類型，並可動態呼叫方法、賦值等功能，
