@@ -21,7 +21,7 @@
         此解法並不是很完善的解法。
     CSRF Token：
         由伺服器端隨機送出一組 CSRF Token，再發起請求時候加上這組 CSRF Token，這代表的是只有本身網域才可獲得 Token，
-        其他人無法仿造出來，就可以識別是攻擊者發起或使用者發起請求，實際程式做法上的差異可以延伸出 Double Submit Cookie、Double Submit Cookie 等方法。
+        其他人無法仿造出來，就可以識別是攻擊者發起或使用者發起請求。
     SameSite Cookie：
         瀏覽器提供的功能，可以控制 Cookie 判斷不是同個 site 底下發出的請求，就不自動帶入 Cookie。
     
