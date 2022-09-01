@@ -85,6 +85,24 @@ vim config.json
 ```
 
 ```shell
+cd /blockchain/neo/testnet/neo-cli/Plugins/TokensTracker
+
+vim config.json
+
+# 修改一下參數
+    Network: 894710606
+```
+
+```shell
+cd /blockchain/neo/testnet/neo-cli/Plugins/ApplicationLogs
+
+vim config.json
+
+# 修改一下參數
+    Network: 894710606
+```
+
+```shell
 # 需回到 neo-cli 目錄
 cd /blockchain/neo/testnet/neo-cli
 
