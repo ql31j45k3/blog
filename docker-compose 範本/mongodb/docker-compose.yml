@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  mongo60:
+    image: library/mongo:6.0
+    restart: always
+    container_name: mongo-60
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data/mongo-60:/data/db

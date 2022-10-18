@@ -2,7 +2,7 @@ version: "3"
 
 services:
   redis-6371:
-    image: redis:6.2.7
+    image: redis:7.0
     container_name: redis-6371
     restart: always
     volumes:
@@ -15,7 +15,7 @@ services:
       redis-server /usr/local/etc/redis/redis.conf
 
   redis-6372:
-    image: redis:6.2.7
+    image: redis:7.0
     container_name: redis-6372
     restart: always
     volumes:
@@ -28,7 +28,7 @@ services:
       redis-server /usr/local/etc/redis/redis.conf
 
   redis-6373:
-    image: redis:6.2.7
+    image: redis:7.0
     container_name: redis-6373
     restart: always
     volumes:
@@ -41,7 +41,7 @@ services:
       redis-server /usr/local/etc/redis/redis.conf
 
   redis-6374:
-    image: redis:6.2.7
+    image: redis:7.0
     container_name: redis-6374
     restart: always
     volumes:
@@ -54,7 +54,7 @@ services:
       redis-server /usr/local/etc/redis/redis.conf
 
   redis-6375:
-    image: redis:6.2.7
+    image: redis:7.0
     container_name: redis-6375
     restart: always
     volumes:
@@ -67,7 +67,7 @@ services:
       redis-server /usr/local/etc/redis/redis.conf
 
   redis-6376:
-    image: redis:6.2.7
+    image: redis:7.0
     container_name: redis-6376
     restart: always
     volumes:
@@ -80,7 +80,7 @@ services:
       redis-server /usr/local/etc/redis/redis.conf
 
   redis-cluster-creator:
-    image: redis:6.2.7
+    image: redis:7.0
     entrypoint: [/bin/sh,-c,'echo "yes" | redis-cli -a 1234 --cluster create 127.0.0.1:6371 127.0.0.1:6372 127.0.0.1:6373 127.0.0.1:6374 127.0.0.1:6375 127.0.0.1:6376 --cluster-replicas 1']
     depends_on:
       - redis-6371
