@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  rabbitmq39:
+    image: rabbitmq:3.9-management-alpine
+    restart: always
+    container_name: rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=1234
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - ./data/rabbitmq:/var/lib/rabbitmq
