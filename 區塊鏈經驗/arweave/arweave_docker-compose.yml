@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  arweave:
+    image: arweave-mainnet
+    container_name: arweave-mainnet
+    restart: always
+    volumes:
+      - ./node-data:/app/arweave/node-data
+      - ./log:/app/arweave/log
+    ports:
+      - 1984:1984
+    command:
+      bash -c "
+      epmd -daemon && \
+      cd /app/arweave && \
+      ./bin/start \
+      data_dir ./node-data \
+      log_dir ./log \
+      debug \
+      sync_jobs 300 \
+      peer 188.166.200.45 \
+      peer 188.166.192.169 \
+      peer 163.47.11.64 \
+      peer 139.59.51.59 \
+      peer 138.197.232.192 \
+      peer 206.83.144.16:1984 \
+      peer 198.206.133.33:1984 \
+      peer 35.222.27.85:1984 \
+      peer 69.197.157.250:1984 \
+      "

@@ -1,0 +1,35 @@
+version: '2'
+services:
+
+  elasticsearch:
+    image: elasticsearch:7.16.2
+    container_name: elasticsearch7.16.2
+    environment:
+      - bootstrap.memory_lock=true   # 内存交换的选项，官网建议为true
+      - discovery.type=single-node      # 是否启用单节点模式
+    ulimits:        # 栈内存的上限
+      memlock:
+        soft: -1    # 不限制
+        hard: -1    # 不限制
+    hostname: elasticsearch
+    restart: always
+    ports:
+      - 9200:9200
+      - 9300:9300
+
+
+  kibana:
+    image: kibana:7.16.2
+    container_name: kibana7.16.2
+    environment:
+      - elasticsearch.hosts=http://elasticsearch:9200
+    hostname: kibana
+    depends_on:
+      - elasticsearch
+    restart: always
+    ports:
+      - 5601:5601
+
+volumes:
+  esdata:
+    driver: local

@@ -1,0 +1,42 @@
+ARG BASE_IMAGE=ubuntu:22.04
+
+FROM $BASE_IMAGE AS builder
+
+ARG GIT_TAG="N.2.6.10"
+
+# Install other dependencies
+RUN apt-get update && apt-get install -y \
+    libssl-dev \
+    libgmp-dev \
+    libsqlite3-dev \
+    make \
+    cmake \
+    gcc \
+    g++ \
+    git \
+    erlang
+
+# Set the working directory
+WORKDIR /app
+
+# The build steps are executed every time
+RUN set -x
+RUN git clone --recursive https://github.com/ArweaveTeam/arweave.git
+WORKDIR /app/arweave
+RUN git fetch --all && \
+    git pull --force && \
+    git checkout --force $GIT_TAG
+RUN /app/arweave/rebar3 as prod tar
+
+##########################################################################################
+FROM $BASE_IMAGE
+
+# Set noninteractive installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+WORKDIR /app/arweave
+
+COPY --from=builder /app/arweave/_build/prod/rel/arweave/arweave-*.tar.gz /app/arweave/arweave.tar.gz
+
+RUN tar xvf arweave.tar.gz && rm -f arweave.tar.gz
+RUN apt-get update && apt-get install -y erlang
